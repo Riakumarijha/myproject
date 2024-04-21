@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Lifestyle Partner | Eco-friendly Shopping | Ecoyaan</title>
+    <link rel="icon" href="/images/ecoyaan-favicon.ico">
+    <link rel="stylesheet" href="/assets/index-B4Fok7p9.css">
+    <style>
+        /* Add any additional styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-menu ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-menu ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #3E8E41;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-menu ul li a:hover {
+            background-color: #367733;
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 220px;
+            background-color: #fff;
+            margin-top: 10px;
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+
+        }
+
+        .hero-image {
+            width: 550%;
+            border-radius: 20px;
+        }
+
+        .hero-text {
+            width: 45%;
+        }
+
+        .hero-text h2 {
+            color: #4CAF50;
+        }
+
+        .about-section,
+        .products-section {
+            padding: 20px;
+            background-color: gray;
+            margin-top: 20px;
+        }
+
+        .footer-container {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-container h3 {
+            color: #4CAF50;
+        }
+
+        .footer-links ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-links ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: #4CAF50;
+        }
+
+        .footer-social ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-social ul li a {
+            text-decoration: none;
+            color: palevioletred;
+            transition: color 0.3s ease;
+        }
+
+        .footer-social ul li a:hover {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Ecoyaan</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sell on Ecoyaan</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-text">
+                <h2>Buy Less, Buy Better!</h2>
+                <p>Authentic sources of truth for your sustainability needs.</p>
+                <button>About Us</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const heroSection = document.querySelector('.hero-section');
+        let currentImageIndex = 0;
+        const images = [
+            'https://ecoyaan.com/images/carousel-1.png',
+            'https://ecoyaan.com/images/carousel-3.png'
+        ];
+
+        function changeBackground() {
+            heroSection.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }
+
+        setInterval(changeBackground, 5000);
+    </script>
+
+
+
+
+
+    <section class="about-section" style="background-color: white; color: #333; padding: 20px;">
+        <div class="about-text">
+            <h2 style="color: #007BFF;">About Us</h2>
+            <p style="margin-bottom: 15px;">
+                At Ecoyaan, we are more than just a platform. Our vision is to build an eco-conscious community
+                for people and products.
+            </p>
+            <p>
+                Consider us your partner for all things sustainable. To keep you motivated on the journey, we
+                will provide you with engaging information about climate change, the latest updates on climate
+                policies, and lifestyle tips that you can adopt to reduce your impact on the environment.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="products-section" style="background-color: #e6f7ff; color: #333; padding: 20px;">
+        <div class="products-container">
+            <h2 style="color: #007BFF;">Carefully Curated Eco-friendly Products</h2>
+            <p style="margin-bottom: 15px;">
+                We believe that every purchase you make can have a positive impact on the planet and the future.
+            </p>
+            <p style="margin-bottom: 15px;">
+                Soon, we will be connecting you with eco-friendly and sustainable products that are carefully
+                selected based on their environmental and social benefits.
+            </p>
+            <video src="https://ecoyaan.com/images/ProductCuration.mp4" controls
+                style="width: 30%; margin-top: 20px; border-radius: 10px;"></video>
+        </div>
+    </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sell on Ecoyaan</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/ecoyaan/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/ecoyaan/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/Ecoyaan/" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-address">
+                <h3>Registered Address</h3>
+                <address>
+                    1-N-12T-781/1<br>
+                    Sri Krishna Vilasa,<br>
+                    Urvastores,<br>
+                    Ashoknagar (MR),<br>
+                    Mangalore,<br>
+                    Dakshina Kannada- 575006,<br>
+                    Karnataka, India
+                </address>
+            </div>
+            <div class="footer-subscribe">
+                <h3>Subscribe to receive updates on blogs, future launches and more !</h3>
+                <p>By subscribing, you agree to receive notifications. <a href="#">Privacy Policy</a></p>
+                <form>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
